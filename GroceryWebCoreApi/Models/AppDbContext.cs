@@ -15,6 +15,8 @@ namespace GroceryWebCoreApi.Models
         public DbSet<Order> Orders { get; set; }
         public DbSet<Product> Products { get; set; }    
         public DbSet<User> Users { get; set; }
+        public DbSet<Employee> Employees { get; set; }
+        public DbSet<Delivery> Deliveries { get; set; }
 
     }
 }
