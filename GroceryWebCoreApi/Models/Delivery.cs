@@ -12,7 +12,10 @@ namespace GroceryWebCoreApi.Models
         [Required]
         public int OrderId { get; set; }
         public virtual Order Order { get; set; }
-
+        [Required, MaxLength(13)]
+        public string PickupDate { get; set; }
+        [Required, MaxLength(13)]
+        public string DeliveryDate { get; set; }
         [Required]
         public bool Status { get; set; }
     }
