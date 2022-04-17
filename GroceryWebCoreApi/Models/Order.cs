@@ -22,7 +22,7 @@ namespace GroceryWebCoreApi.Models
 		public string PaymentMode { get; set; }
 
 		[Required, MaxLength(20)]
-		public string DeliveryDate { get; set; }
+		public string OrderDate { get; set; }
 
 		[Required]
 		public int TotalValue { get; set; }
