@@ -15,11 +15,18 @@ namespace GroceryWebCoreApi.Models
         public string EmailId { get; set; }
         [Required,MaxLength(13)]
         public string PhoneNumber { get; set; }
-        [Required,MaxLength(60)]
-        public string Address { get; set; }
+        [Required,MaxLength(20)]
+        public string Area { get; set; }
+
+        [Required, MaxLength(20)]
+        public string City { get; set; }
+        [Required, MaxLength(20)]
+        public string State { get; set; }
+        [Required, MaxLength(20)]
+        public string Country { get; set; }
+        [Required, MaxLength(10)]
+        public string Pincode { get; set; }
         
-        [Required]
-        public int Wallet { get; set; }
 
         [DataType(DataType.Password)]
         [Required,MaxLength(20)]

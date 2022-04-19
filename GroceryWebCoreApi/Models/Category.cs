@@ -7,7 +7,7 @@ namespace GroceryWebCoreApi.Models
         [Key]
         public int CategoryId { get; set; }
 
-        [Required,MaxLength(15)]
+        [Required,MaxLength(20)]
 		public string CategoryName { get; set; }
 
         

@@ -8,8 +8,10 @@ namespace GroceryWebCoreApi.Models
         [Key]
         public int ProductId { get; set; }
 
-        [Required]
+        [Required,MaxLength(20)]
         public string ProductName { get; set; }
+        [Required,MaxLength(20)]
+        public string ProductDetails { get; set; }
         [Required]
         public string Description { get; set; }
         [Required]
