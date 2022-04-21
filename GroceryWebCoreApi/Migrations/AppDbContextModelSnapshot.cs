@@ -327,6 +327,11 @@ namespace GroceryWebCoreApi.Migrations
                         .HasMaxLength(20)
                         .HasColumnType("nvarchar(20)");
 
+                    b.Property<string>("Street")
+                        .IsRequired()
+                        .HasMaxLength(30)
+                        .HasColumnType("nvarchar(30)");
+
                     b.Property<string>("UserName")
                         .IsRequired()
                         .HasMaxLength(20)
